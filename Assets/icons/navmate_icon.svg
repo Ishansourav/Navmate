@@ -1,0 +1,219 @@
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Ultra Professional Gradients -->
+    <radialGradient id="portalGradient" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" style="stop-color:#FF6B9D;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#C084FC;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#60A5FA;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#34D399;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="coreGradient" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#F0F9FF;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#0EA5E9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E40AF;stop-opacity:1" />
+    </radialGradient>
+    
+    <linearGradient id="botGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F8FAFC;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#E2E8F0;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#94A3B8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#475569;stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="visorGradient" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#1E293B;stop-opacity:0.3" />
+      <stop offset="50%" style="stop-color:#0F172A;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </radialGradient>
+    
+    <linearGradient id="swirlyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#06B6D4;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="glowField" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#06FFA5;stop-opacity:0.8" />
+      <stop offset="30%" style="stop-color:#00D4FF;stop-opacity:0.6" />
+      <stop offset="60%" style="stop-color:#8B5CF6;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Professional Filters -->
+    <filter id="ultraGlow" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feColorMatrix in="coloredBlur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 4 0"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="premiumShadow" x="-100%" y="-100%" width="300%" height="300%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.25"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#1E40AF" flood-opacity="0.15"/>
+    </filter>
+    
+    <filter id="innerGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="blur" in2="SourceGraphic" operator="screen"/>
+    </filter>
+  </defs>
+  
+  <!-- Background Energy Field -->
+  <circle cx="150" cy="150" r="140" fill="url(#glowField)" opacity="0.3"/>
+  
+  <!-- Dynamic Swirl Portal Background -->
+  <g transform="translate(150,150)">
+    <path d="M-60,0 Q-30,-60 0,-60 Q60,-30 60,0 Q30,60 0,60 Q-60,30 -60,0 Z" 
+          fill="url(#swirlyGradient)" opacity="0.8" filter="url(#ultraGlow)">
+      <animateTransform attributeName="transform" type="rotate" 
+                       values="0 0 0;360 0 0" dur="20s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M-40,0 Q-20,-40 0,-40 Q40,-20 40,0 Q20,40 0,40 Q-40,20 -40,0 Z" 
+          fill="url(#portalGradient)" opacity="0.6">
+      <animateTransform attributeName="transform" type="rotate" 
+                       values="0 0 0;-360 0 0" dur="15s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Professional Bot Assembly -->
+  <g transform="translate(150,165)">
+    <!-- Main Body -->
+    <ellipse cx="0" cy="10" rx="32" ry="22" fill="url(#botGradient)" 
+             filter="url(#premiumShadow)" opacity="0.95"/>
+    <rect x="-22" y="0" width="44" height="16" rx="8" fill="url(#botGradient)" opacity="0.9"/>
+    
+    <!-- Professional Detail Lines -->
+    <line x1="-20" y1="5" x2="20" y2="5" stroke="#0EA5E9" stroke-width="1" opacity="0.6"/>
+    <line x1="-15" y1="10" x2="15" y2="10" stroke="#8B5CF6" stroke-width="0.8" opacity="0.5"/>
+  </g>
+  
+  <!-- Ultra Professional Helmet -->
+  <g transform="translate(150,125)">
+    <!-- Main Helmet Structure -->
+    <ellipse cx="0" cy="0" rx="40" ry="30" fill="url(#botGradient)" 
+             filter="url(#premiumShadow)"/>
+    
+    <!-- Professional Highlight -->
+    <ellipse cx="-12" cy="-10" rx="18" ry="10" fill="#FFFFFF" opacity="0.4"/>
+    <ellipse cx="-8" cy="-8" rx="12" ry="6" fill="#F0F9FF" opacity="0.6"/>
+    
+    <!-- Advanced Visor -->
+    <ellipse cx="0" cy="2" rx="34" ry="24" fill="url(#visorGradient)" 
+             filter="url(#innerGlow)"/>
+    <ellipse cx="0" cy="0" rx="32" ry="22" fill="#000000" opacity="0.85"/>
+    
+    <!-- Visor Reflection -->
+    <ellipse cx="-8" cy="-6" rx="12" ry="6" fill="#06B6D4" opacity="0.3"/>
+    <ellipse cx="8" cy="-4" rx="8" ry="4" fill="#8B5CF6" opacity="0.2"/>
+  </g>
+  
+  <!-- Ultra Advanced Navigation Core -->
+  <g transform="translate(150,125)">
+    <!-- Core Energy Field -->
+    <circle cx="0" cy="0" r="25" fill="url(#glowField)" opacity="0.5"/>
+    
+    <!-- Premium 3D Navigation Cube -->
+    <g filter="url(#ultraGlow)">
+      <!-- Cube Geometry -->
+      <path d="M-8,-5 L0,-10 L8,-5 L8,5 L0,10 L-8,5 Z" 
+            fill="url(#portalGradient)" opacity="0.9"/>
+      <path d="M0,-10 L8,-5 L8,5 L0,10 Z" 
+            fill="url(#portalGradient)" opacity="0.7"/>
+      <path d="M-8,-5 L0,-10 L0,10 L-8,5 Z" 
+            fill="url(#portalGradient)" opacity="0.5"/>
+      
+      <!-- Inner Core -->
+      <circle cx="0" cy="0" r="3" fill="#FFFFFF" opacity="0.9">
+        <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.9;0.5;0.9" dur="2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    
+    <!-- Multi-Ring Orbital System -->
+    <ellipse cx="0" cy="0" rx="20" ry="5" fill="none" stroke="url(#swirlyGradient)" 
+             stroke-width="2" opacity="0.8" transform="rotate(-20)">
+      <animate attributeName="opacity" values="0.8;0.4;0.8" dur="3s" repeatCount="indefinite"/>
+    </ellipse>
+    
+    <ellipse cx="0" cy="0" rx="16" ry="4" fill="none" stroke="url(#portalGradient)" 
+             stroke-width="1.5" opacity="0.6" transform="rotate(30)">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2.5s" repeatCount="indefinite"/>
+    </ellipse>
+    
+    <ellipse cx="0" cy="0" rx="12" ry="3" fill="none" stroke="url(#swirlyGradient)" 
+             stroke-width="1" opacity="0.5" transform="rotate(-45)">
+      <animate attributeName="opacity" values="0.5;0.1;0.5" dur="2s" repeatCount="indefinite"/>
+    </ellipse>
+    
+    <!-- Premium Orbital Particles -->
+    <circle cx="18" cy="-2" r="2" fill="#06FFA5" filter="url(#ultraGlow)">
+      <animateTransform attributeName="transform" type="rotate" 
+                       values="0 0 0;360 0 0" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="-15" cy="3" r="1.5" fill="#FF6B9D" filter="url(#ultraGlow)">
+      <animateTransform attributeName="transform" type="rotate" 
+                       values="0 0 0;-360 0 0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="12" cy="8" r="1" fill="#C084FC" filter="url(#ultraGlow)">
+      <animateTransform attributeName="transform" type="rotate" 
+                       values="0 0 0;360 0 0" dur="5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Professional Antenna System -->
+  <g transform="translate(150,95)">
+    <line x1="0" y1="0" x2="0" y2="-12" stroke="url(#botGradient)" 
+          stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="0" cy="-15" r="4" fill="url(#portalGradient)" filter="url(#ultraGlow)"/>
+    <circle cx="0" cy="-15" r="1.5" fill="#FFFFFF" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;0.3;0.9" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Advanced Sensor Arrays -->
+  <ellipse cx="105" cy="130" rx="5" ry="15" fill="url(#botGradient)" 
+           opacity="0.9" filter="url(#premiumShadow)"/>
+  <ellipse cx="195" cy="130" rx="5" ry="15" fill="url(#botGradient)" 
+           opacity="0.9" filter="url(#premiumShadow)"/>
+  
+  <!-- Ultra Professional Status Panel -->
+  <g transform="translate(150,170)">
+    <rect x="-16" y="-6" width="32" height="12" rx="6" fill="#0F172A" 
+          opacity="0.9" filter="url(#premiumShadow)"/>
+    <rect x="-14" y="-4" width="28" height="8" rx="4" fill="#1E293B" opacity="0.7"/>
+    
+    <!-- Multi-Status Professional LEDs -->
+    <circle cx="-8" cy="0" r="1.5" fill="#06FFA5">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="1.5" fill="#3B82F6">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="8" cy="0" r="1.5" fill="#C084FC">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+  </g>
+  
+  <!-- Professional Energy Waves -->
+  <circle cx="150" cy="125" r="45" fill="none" stroke="url(#swirlyGradient)" 
+          stroke-width="1" opacity="0.3" stroke-dasharray="8,12">
+    <animateTransform attributeName="transform" type="rotate" 
+                     values="0 150 125;360 150 125" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.1;0.3" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="150" cy="125" r="55" fill="none" stroke="url(#portalGradient)" 
+          stroke-width="0.8" opacity="0.2" stroke-dasharray="5,20">
+    <animateTransform attributeName="transform" type="rotate" 
+                     values="0 150 125;-360 150 125" dur="18s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.05;0.2" dur="6s" repeatCount="indefinite"/>
+  </circle>
+</svg>
