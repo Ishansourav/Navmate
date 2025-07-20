@@ -1,4 +1,10 @@
 # 🚀 NavMate - WhatsApp Navigation Chatbot Project
+<div>
+  <img 
+    src="https://raw.githubusercontent.com/Ishansourav/Navmate/main/Assets/Logo/navmate-wordmark.png" 
+    alt="NavMate Wordmark"
+  />
+</div>
 <!DOCTYPE html>
 <html lang="en">
 <head>
